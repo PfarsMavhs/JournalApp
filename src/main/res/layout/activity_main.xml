@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signinWithGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="98dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameLogged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="54dp"
+        android:text="Sign In"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="346dp" />
+
+    <EditText
+        android:id="@+id/signInEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:hint="@string/emailAddress"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/signInPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="202dp"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/signinWithGmail"
+        android:layout_marginStart="71dp"
+        android:background="#FFFFFF"
+        android:text="@string/login"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/signuppage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nameLogged"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="69dp"
+        android:text="@string/noAccount" />
+</RelativeLayout>
+</layout>

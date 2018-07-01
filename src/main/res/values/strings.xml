@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Journal App</string>
+
+    //register
+    <string name="registerUser">Register User</string>
+    <string name="displayName">Display Name</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="password">Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="signUp">Sign_Up</string>
+    <string name="login">Sign-In</string>
+    <string name="noAccount">For SignUp Click here</string>
+
+</resources>
